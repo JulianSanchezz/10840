@@ -1,0 +1,46 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario {
+    margin-bottom: 30px; /
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #f2f2f2;
+}
+
+.imagen{
+    max-width: 150px; 
+    max-height: 150px; 
+    width: auto; 
+    height: auto; 
+  }
+
+  .formulario input {
+    display: block;
+    width: 100%;  /* Opcional: para que los inputs ocupen todo el ancho disponible */
+    margin-bottom: 10px;  /* Espacio entre los inputs */
+    padding: 8px;  /* Opcional: para darle un poco de relleno al input */
+}
+
+.formulario label {
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+    display: block; /* Asegura que el label esté arriba del input */
+}
+
+  
