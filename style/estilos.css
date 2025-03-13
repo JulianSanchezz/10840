@@ -1,27 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px; /* Aumenta el tamaño de la letra */
+    font-family: 'Poppins', sans-serif; /* Cambia el tipo de letra */
+    /* background-color: #FDFBFB;  */
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: justify; /* Justifica el texto */
+}
+
+
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.formulario {
-    margin-bottom: 30px; /
-}
 
 .tabla {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px; 
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .tabla th, .tabla td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px 18px;
     text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
 }
 
 .tabla th {
-    background-color: #f2f2f2;
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #ddd;
+}
+
+.tabla td {
+    background-color: #fafafa;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.tabla td:last-child, .tabla th:last-child {
+    border-right: none;
 }
 
 .imagen{
@@ -31,11 +70,20 @@
     height: auto; 
   }
 
+  .formulario {
+    margin-bottom: 30px; 
+}
+
   .formulario input {
     display: block;
-    width: 100%;  /* Opcional: para que los inputs ocupen todo el ancho disponible */
-    margin-bottom: 10px;  /* Espacio entre los inputs */
-    padding: 8px;  /* Opcional: para darle un poco de relleno al input */
+    width: 70%;  
+    margin-bottom: 15px;  /* Espacio entre los inputs */
+    padding: 12px;  /* Relleno más grande para que se vean más cómodos */
+    border: 3px solid #ddd; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    transition: border-color 0.3s ease; /* Transición suave cuando se hace foco */
+    border-color:gray;
 }
 
 .formulario label {
@@ -43,4 +91,51 @@
     display: block; /* Asegura que el label esté arriba del input */
 }
 
-  
+.formulario input:focus {
+    border-color: #4CAF50; /* Cambia el borde cuando el input tiene el foco */
+    outline: none; /* Elimina el borde azul predeterminado del navegador */
+}
+
+.formulario label {
+    margin-bottom: 8px; /* Espacio entre el label y el input */
+    font-weight: bold; /* Hacer los labels más destacados */
+    display: block; /* Asegura que el label esté arriba del input */
+    font-size: 14px; /* Un tamaño de fuente más pequeño pero legible */
+    color: #555; /* Color suave para los labels */
+}
+
+.formulario button {
+    width: 50%; /* Ajusta el ancho del botón */
+    padding: 10px 15px; /* Espaciado cómodo */
+    font-size: 16px; /* Tamaño de texto adecuado */
+    font-weight: bold; /* Negrita para resaltar */
+    color: #fff; /* Texto blanco */
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Degradado azul */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: all 0.3s ease; /* Suaviza las animaciones */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 100px; /
+}
+
+
+.image img {
+    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 800px; /* Controla la altura máxima */
+    width: auto;
+    height: auto;
+    border-radius: 15px; /* Suaviza las esquinas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    opacity: 0.9; /* Le da un efecto de transparencia sutil */
+    transition: all 0.3s ease; /* Animación suave */
+}
+
